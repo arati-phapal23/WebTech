@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .navbar img {
+            width: 150px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/5a64e54d-e3dc-4c93-9e2e-2d9a51ecdd8b/f648a55d-6d5a-4c30-8db6-39bdc7f98652/IN-en-20240219-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background-color: #222;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+        }
+        .card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .card button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
+    </div>
+
+    <div class="hero">
+        <h1>Unlimited movies, TV shows, and more</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <button>Join Now</button>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="https://lh5.googleusercontent.com/proxy/P6rLpx3ejtNhqRM86VYZ1spByvYCYYcPmEAcZi-6zjbsEpku1mjT5fRtHVSc2lGcLetXPihsqbN2DLKnuLXm9olqvz5nYPE" alt="Show Image">
+            <h2>1 XOXO. KITTY</h2>
+            <button>Watch Now</button>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg" alt="Show Image">
+            <!-- <h2>Delicious Dose</h2> -->
+            <button>Watch Now</button>
+        </div>
+      
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BNjBkOGQ1OWYtMTg3NC00MTRmLWFhNGMtNDkyMzFmZDliMDlmXkEyXkFqcGc@._V1_.jpg" alt="Show Image">
+            <!-- <h2>Foodie Specials</h2> -->
+            <button>Watch Now</button>
+
+           <div class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BZjBkOWU5YjctYmI3OS00ZDljLTg2NDItYzJlNjdlNzhjNGViXkEyXkFqcGc@._V1_QL75_UX820_.jpg" alt="Show Image">
+            <!-- <h2>Foodie Specials</h2> -->
+            <button>Watch Now</button>
+          
+          
+        </div>
+    </div>
+</body>
+</html>

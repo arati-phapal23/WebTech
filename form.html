@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width: 400px ; background-color: rgb(147, 224, 199); font-size: 20px;" >
+        <legend style="text-align: center;">Job Application</legend>
+        <form action="">
+
+            <label for="FullName">Full Name : </label>
+            <input type="text" id="FullName" name="Full Name">
+            <br><br>
+
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="Email">
+            <br><br>
+
+            <label for="num">Contact : </label>
+            <input type="tel" id="num" name="Contact">
+            <br><br>
+
+            <label for="DOB">Date Of Birth: </label>
+            <input type="date" id="DOB" name="Date Of birth">
+            <br><br>
+            
+            <label for="age">Age : </label>
+            <input type="number" id="age" name="Age">
+            <br><br>
+
+            <label for="add">Address : </label>
+            <textarea name="Address" id="add" rows="5" cols="40"></textarea>
+            <br><br>
+
+            <label for="res">Resume : </label>
+            <input type="file" id="res" name="Resume">
+            <br><br>
+
+            <label for="Gen">Gender</label>
+            <input type="radio" id="Gen" value="Male" name="gender">Male
+            <input type="radio" id="Gen" value="Female" name="gender">Female
+            <br><br>
+
+            <label for="edu">Education : </label>
+            <select name="Education" id="edu">
+                <option value="">Choose an option</option>
+                <optgroup label="Bachelor">
+                    <option value="B.Sc.">B.Sc</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="BCA">BCA</option>
+                </optgroup>
+
+                <optgroup label="Master's">
+                   <option value="MCA">MCA</option>
+                   <option value="M.Tech">M.Tech</option>
+                </optgroup>
+            </select>
+            <br><br>
+
+            <button>Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>

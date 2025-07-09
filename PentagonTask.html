@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentagon Shape</title>
+    <style>
+        .parent {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .pentagon {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="pentagon"></div>
+    </div>
+</body>
+</html>

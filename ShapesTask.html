@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+    <style>
+        body {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .shape-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            width: 100px;
+        }
+        
+        /* Triangle */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 200px solid orange;
+        }
+        
+        /* Pentagon */
+        .pentagon {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+        
+        /* Hexagon */
+        .hexagon {
+            position: relative;
+            width: 60px;
+            height: 34.64px;
+            background-color: magenta;
+            margin-top: 17.32px;
+        }
+        .hexagon:before, .hexagon:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+        }
+        .hexagon:before {
+            top: -17.32px;
+            border-bottom: 17.32px solid magenta;
+        }
+        .hexagon:after {
+            bottom: -17.32px;
+            border-top: 17.32px solid magenta;
+        }
+        
+        /* Star */
+        /* .star {
+            font-size: 100px;
+            line-height: 100px;
+            color: gold;
+            text-align: center;
+        } */
+        
+        /* Cylinder */
+        /* .cylinder {
+            position: relative;
+            width: 60px;
+            height: 100px;
+            background: purple;
+            border-radius: 30px / 10px;
+            border: 3px solid pink;
+        }
+        .cylinder:before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 20px;
+            background: purple;
+            border-radius: 50%;
+            top: -10px;
+            border: 3px solid pink;
+        } */
+    </style>
+</head>
+<body>
+    <div class="shape-container">
+        <h2>Triangle</h2><br>
+        <div class="triangle"></div>
+    </div>
+
+    <div class="shape-container">
+        <h2>Pentagon</h2><br>
+        <div class="pentagon"></div>
+    </div>
+
+    <div class="shape-container">
+        <h2>Hexagon</h2><br>
+        <div class="hexagon"></div>
+    </div>
+
+    <!-- <div class="shape-container">
+        <h2>Star</h2><br>
+        <div class="star">&#9733;</div>
+    </div>
+
+    <div class="shape-container">
+        <h2>Cylinder</h2><br>
+        <div class="cylinder"></div>
+    </div> -->
+</body>
+</html>

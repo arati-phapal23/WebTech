@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+</head>
+<body>
+    <h1>Personal Information Form</h1>
+     <fieldset style="width: 700px; background-color: rgb(243, 183, 193)">
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required><br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required><br><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required><br><br>
+
+            <label for="zipcode">Zip Code:</label>
+            <input type="text" id="zipcode" name="zipcode" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Background</legend>
+            <label for="highest-qualification">Highest Qualification:</label>
+            <input type="text" id="highest-qualification" name="highest_qualification" required><br><br>
+
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university" required><br><br>
+
+            <label for="year-of-passing">Year of Passing:</label>
+            <input type="number" id="year-of-passing" name="year_of_passing" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Professional Details</legend>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job_title"><br><br>
+
+            <label for="company-name">Company Name:</label>
+            <input type="text" id="company-name" name="company_name"><br><br>
+
+            <label for="experience">Years of Experience:</label>
+            <input type="number" id="experience" name="experience"><br><br>
+
+            <label for="skills">Key Skills:</label>
+            <input type="text" id="skills" name="skills"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Details</legend>
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies"><br><br>
+
+            <label for="languages">Languages Known:</label>
+            <input type="text" id="languages" name="languages"><br><br>
+
+            <label for="linkedin">LinkedIn Profile:</label>
+            <input type="url" id="linkedin" name="linkedin"><br><br>
+
+            <label for="github">GitHub Profile:</label>
+            <input type="url" id="github" name="github"><br><br>
+
+            <label for="portfolio">Portfolio Website:</label>
+            <input type="url" id="portfolio" name="portfolio"><br><br>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional_info"></textarea><br><br>
+        </fieldset>
+
+
+        <button type="submit">Submit</button>
+    </form>
+</fieldset>
+</body>
+</html>

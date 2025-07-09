@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(246, 163, 239);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+.parent .child{
+    background: linear-gradient(45deg, rgb(247, 161, 247),rgb(218, 54, 114));
+}
+
+.b1{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.b2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.b3{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.b4{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.b5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:5;
+    grid-row-end: 9;
+}
+.b6{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:5;
+    grid-row-end: 9;
+}
+.b7{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:5;
+    grid-row-end: 9;
+}
+.b8{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start:5;
+    grid-row-end: 9;
+}
+.b9{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b10{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b11{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b12{
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b13{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b14{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+.b15{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+.b16{
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.b17{
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 9;
+}
+.b18{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.b19{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.b20{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.b21{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.b22{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.b23{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.b24{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+.b25{
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+</style>
+<body>
+    <div class="parent">
+        <div class="child b1"></div>
+        <div class="child b2"></div>
+        <div class="child b3"></div>
+        <div class="child b4"></div>
+        <div class="child b5"></div>
+        <div class="child b6"></div>
+        <div class="child b7"></div>
+        <div class="child b8"></div>
+        <div class="child b9"></div>
+        <div class="child b10"></div>
+        <div class="child b11"></div>
+        <div class="child b12"></div>
+        <div class="child b13"></div>
+        <div class="child b14"></div>
+        <div class="child b15"></div>
+        <div class="child b16"></div>
+        <div class="child b17"></div>
+        <div class="child b18"></div>
+        <div class="child b19"></div>
+        <div class="child b20"></div>
+        <div class="child b21"></div>
+        <div class="child b22"></div>
+        <div class="child b23"></div>
+        <div class="child b24"></div>
+        <div class="child b25"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>
